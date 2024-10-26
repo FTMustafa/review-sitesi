@@ -9,15 +9,18 @@ function Main() {
           <div key={item.id} className="reviews">
             <img src={item.foto} />
             <div className="reviews-mid">
-              <p>{item.aciklama}</p>
-              <p>{item.rating}</p>
+              <div className="reviews-exp">{item.aciklama}</div>
+              <div className="reviews-rating">{item.rating}</div>
             </div>
             <div className="reviews-right">
+              <div className="reviews-right-comment">
               {item.yorumlar.map((yorum) => (
                     <div key={yorum.k_id} className="reviews-comments">
+                      <img/>
                       <p>{yorum.k_yorum}</p>
                     </div>
                   ))}
+              </div>
             </div>
           </div>
         ))}

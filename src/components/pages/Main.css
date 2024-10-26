@@ -50,16 +50,60 @@
 }
 
 .reviews-mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 40%;
-  border: 1px solid;
-  border-radius: 20px;
+  height: 90%;
+  gap: 5px;
   box-sizing: border-box;
 }
 
+.reviews-exp{
+  width: 280px;
+  height: 70%;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.reviews-rating{
+  height: 30%;
+  width: 280px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
 .reviews-right {
+  display: flex;
+  flex-direction: column;
   width: 37%;
   height: 90%;
   border: 1px solid;
   border-radius: 20px;
   box-sizing: border-box;
+  padding: 10px;
+}
+
+.reviews-comments {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews-right-comment{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reviews-comments img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.reviews-comments p {
+  margin: 0;
+  font-size: 14px;
 }
