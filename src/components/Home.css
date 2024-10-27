@@ -63,3 +63,11 @@
   height: auto;
   width: 85%;
 }
+
+
+.nav-button.active,
+.logo.active {
+  background-color: #38b000;
+  border: 2px solid white;
+  color: white;
+}

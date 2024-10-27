@@ -2,7 +2,7 @@ const Rewievs = [
     {
         id: 1,
         foto: '',
-        aciklama: 'Bu bir açıklamadır',
+        aciklama: 'Bu bir açıklamadır aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
         rating: 5,
         yorumlar: [
             {
