@@ -3,7 +3,7 @@ const Rewievs = [
         id: 1,
         foto: '',
         aciklama: 'Bu bir açıklamadır aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-        rating: 5,
+        rating: 0,
         yorumlar: [
             {
                 k_id: 1,
@@ -31,7 +31,7 @@ const Rewievs = [
         id: 2,
         foto: '',
         aciklama: 'Bu bir açıklamadır',
-        rating: 5,
+        rating: 0,
         yorumlar: [
             {
                 k_id: 1,

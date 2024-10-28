@@ -3,12 +3,31 @@ import Rewievs from "../Rewievs";
 import { useState } from "react";
 
 function Main() {
+  // ratings, initial değerleri Rewievs'ten çekiyor
   const [ratings, setRatings] = useState(Rewievs.map((item) => item.rating));
+  const [hoveredRatings, setHoveredRatings] = useState(
+    Rewievs.map(() => null)
+  ); // Her yorum için hover durumu
 
   const handleRating = (itemIndex, newRating) => {
     const updatedRatings = [...ratings];
     updatedRatings[itemIndex] = newRating;
     setRatings(updatedRatings);
+
+    // `Rewievs` listesindeki rating değerini doğrudan güncelle
+    Rewievs[itemIndex].rating = newRating;
+  };
+
+  const handleHover = (itemIndex, star) => {
+    const updatedHoveredRatings = [...hoveredRatings];
+    updatedHoveredRatings[itemIndex] = star;
+    setHoveredRatings(updatedHoveredRatings);
+  };
+
+  const handleMouseLeave = (itemIndex) => {
+    const updatedHoveredRatings = [...hoveredRatings];
+    updatedHoveredRatings[itemIndex] = null;
+    setHoveredRatings(updatedHoveredRatings);
   };
 
   return (
@@ -24,12 +43,20 @@ function Main() {
               <div className="reviews-rating">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <span
-                    key={star}
-                    className={`star ${star <= ratings[index] ? "filled" : ""}`}
-                    onClick={() => handleRating(index, star)}
-                  >
-                    ★
-                  </span>
+                  key={star}
+                  className={`star ${
+                    star <= (hoveredRatings[index] ?? ratings[index])
+                      ? star <= ratings[index]
+                        ? "filled"
+                        : "blink"
+                      : ""
+                  }`}
+                  onClick={() => handleRating(index, star)}
+                  onMouseEnter={() => handleHover(index, star)}
+                  onMouseLeave={() => handleMouseLeave(index)}
+                >
+                  ★
+                </span>
                 ))}
               </div>
             </div>
@@ -52,3 +79,6 @@ function Main() {
 }
 
 export default Main;
+
+
+
