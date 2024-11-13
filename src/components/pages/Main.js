@@ -73,7 +73,7 @@ function Main() {
           </div>
         ))}
       </div>
-      <div className="main-right"></div>
+      {/* <div className="main-right"></div> */}
     </div>
   );
 }

@@ -3,7 +3,7 @@
   flex-direction: row;
   height: 100vh;
   width: 100%;
-  background-color: #fffaff;
+  background-color: #d4e1ff;
 }
 
 .navbar {
@@ -12,11 +12,11 @@
   position: sticky;
   height: 100%;
   width: 15%;
-  background-color: #D09CFA;
+  background-color: #d4e1ff;  
   align-items: center;
   gap: 10px;
-  border-radius: 100px;
-  margin-left: 30px;
+  /* border-radius: 100px; */
+  /* margin-left: 30px; */
 }
 
 .logo {
@@ -26,17 +26,33 @@
   align-items: center;
   width: 100px;
   height: 100px;
-  background-color: #A555EC;
+  background-color: #fdf07c;
   margin-top: 20px;
-  border: 1px solid white;
+  border: 1px solid rgb(100, 100, 100);
   border-radius: 50%;
   cursor: pointer;
-  color: white;
+  color: rgb(100, 100, 100);
   user-select: none;
 }
 .logo:active {
   transform: scale(0.98);
 }
+
+.search {
+  text-align: left;
+  font-size: 15px;
+  height: 30px;
+  width: calc(90% - 15px);
+  border-radius: 50px;
+  font-family: "Ubuntu", sans-serif;
+  border: 1px solid #ccc;
+  background-image: url('./images/search-icon.png');
+  background-size: 20px 20px;
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  padding-left: 15px;
+}
+
 
 .nav-button {
   display: flex;
@@ -48,12 +64,13 @@
   border: 1px solid;
   border-radius: 10px;
   cursor: pointer;
-  color: white;
+  background-color: #fdf07c;
+  color: rgb(100, 100, 100);
   user-select: none;
 }
 
 .nav-button:hover {
-  background-color: #A555EC;
+  background-color: gold;
   transition: background-color 0.3s linear;
 }
 
@@ -68,7 +85,7 @@
 
 .nav-button.active,
 .logo.active {
-  background-color: #A555EC;
-  border: 2px solid white;
-  color: white;
+  background-color: gold;
+  border: 2px solid rgb(100, 100, 100);
+  color: rgb(100, 100, 100);
 }
