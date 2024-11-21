@@ -2,6 +2,7 @@ const Rewievs = [
     {
         id: 1,
         foto: '',
+        bgFoto:'',
         aciklama: 'Bu bir açıklamadır aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
         rating: 0,
         yorumlar: [
@@ -30,6 +31,7 @@ const Rewievs = [
     {
         id: 2,
         foto: '',
+        bgFoto:'',
         aciklama: 'Bu bir açıklamadır',
         rating: 0,
         yorumlar: [
@@ -58,6 +60,7 @@ const Rewievs = [
     {
         id: 3,
         foto: '',
+        bgFoto:'',
         aciklama: 'Bu bir açıklamadır',
         rating: 0,
         yorumlar: [
