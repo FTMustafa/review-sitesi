@@ -51,6 +51,15 @@ function Home() {
         >
           Ayarlar
         </div>
+        <div
+        style={{marginTop:'160px'}}
+          className={`nav-button ${
+            activeButton === "logout" ? "active" : ""
+          }`}
+          onClick={() => handleNavigate("")}
+        >
+          Çıkış yap
+        </div>
       </div>
       <div className="var-page">
         <Outlet></Outlet>

@@ -1,6 +1,7 @@
 import "./Profile.css";
 import Rewievs from "../Rewievs";
 import { useState } from "react";
+import image1 from '../images/a.jpg'; 
 
 function Profile() {
   const [activeUserID, setActiveUserID] = useState(1);
@@ -14,24 +15,27 @@ function Profile() {
         <>
           <div
             className="profile-bg-pic"
-            src={activeUser.bgFoto}
+            // activeUser.bgFoto
             alt="Background"
           >
-            <img className="profile-pp" src={activeUser.foto} alt="Profile" />
+            {/* activeUser.foto */}
+            <img className="profile-pp" src={image1} alt="Profile" />
           </div>
 
           <div className="profile-down-side">
             <div className="profile-down-left-side">
               <div className="info">
-                <p>Name: {activeUser.name}Moustafa</p>
-                <p>Surname: {activeUser.bio}Moustafa</p>
+                <p>{activeUser.name}BİLGİLER</p>
+                <p>{activeUser.bio}</p>
               </div>
               <div className="statistics">
-                <p>Followers: {activeUser.followers}</p>
-                <p>Posts: {activeUser.posts}</p>
+                <p>iSTATİSTİKLER{activeUser.followers}</p>
+                <p>{activeUser.posts}</p>
               </div>
             </div>
-            <div className="profile-down-right-side"></div>
+            <div className="profile-down-right-side">
+              KULLANICI DEĞERLENDİRMELERİ
+            </div>
           </div>
         </>
       ) : (
