@@ -1,6 +1,7 @@
 import "./Main.css";
 import Rewievs from "../Rewievs";
 import { useState } from "react";
+import yorumpp from '../images/yorumpp.jpg'
 
 function Main() {
   // ratings, initial değerleri Rewievs'ten çekiyor
@@ -64,7 +65,8 @@ function Main() {
               <div className="reviews-right-comment">
                 {item.yorumlar.map((yorum) => (
                   <div key={yorum.k_id} className="reviews-comments">
-                    <img src={yorum.k_foto} alt="User Photo" />
+                    {/* yorum.k_foto */}
+                    <img src={yorumpp} alt="User Photo" />
                     <p>{yorum.k_yorum}</p>
                   </div>
                 ))}
