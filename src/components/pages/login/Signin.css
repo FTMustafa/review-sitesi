@@ -19,6 +19,7 @@
     border: 2px solid white;
     border-radius: 50px;
     backdrop-filter: blur(2px);
+    box-shadow: 0px 0px 20px 1px;
 }
 
 form{
@@ -35,6 +36,7 @@ form>input{
 label,h1{
     color: white;
     letter-spacing: 2px;
+    text-shadow: 1px 1px 7px rgb(0, 0, 0);
 }
 .button-side{
     display: flex;
@@ -52,5 +54,5 @@ label,h1{
 .button-side>button:hover{
     /* background-color: rgb(100, 100, 100); */
     /* transition: background-color 1s ease; */
-    box-shadow: 1px 1px 1px 1px;
+    box-shadow: 1px 1px 3px 1px rgb(84, 84, 84);
 }

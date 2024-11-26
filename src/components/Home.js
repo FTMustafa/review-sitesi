@@ -1,5 +1,5 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Modal from "./Modal";
 import "./Home.css";
 
@@ -14,6 +14,13 @@ function Home() {
     navigate(path);
   };
 
+  // userMode değiştiğinde kullanıcıyı anasayfaya yönlendir
+  useEffect(() => {
+    if (userMode === "guest") {
+      navigate("/");
+    }
+  }, [userMode, navigate]);
+
   return (
     <div className="home">
       <div className="navbar">
@@ -21,7 +28,6 @@ function Home() {
           className={`logo ${activeButton === "/" ? "active" : ""}`}
           onClick={() => handleNavigate("/")}
         >
-          {/* <img/> */}
           Logo
         </div>
         <input
@@ -29,10 +35,7 @@ function Home() {
           type="text"
           placeholder="Değerlendirme arayın.."
         />
-        <div
-          className="nav-button"
-          onClick={() => setIsModalOpen(true)}
-        >
+        <div className="nav-button" onClick={() => setIsModalOpen(true)}>
           Ürün Ekle
         </div>
         <div
@@ -66,9 +69,7 @@ function Home() {
           >
             Admin Panel
           </div>
-        ) : (
-          <></>
-        )}
+        ) : null}
         <div
           style={{ marginTop: "0" }}
           className={`nav-button ${activeButton === "logout" ? "active" : ""}`}
@@ -80,15 +81,8 @@ function Home() {
               : console.log("GİRİŞ HATASI");
           }}
         >
-          {userMode === "guest" ? (
-            <>Giriş yap</>
-          ) : userMode === "user" || userMode === "admin" ? (
-            <>Çıkış yap</>
-          ) : (
-            <>HATA</>
-          )}
+          {userMode === "guest" ? "Giriş yap" : "Çıkış yap"}
         </div>
-        
       </div>
       <div className="var-page">
         <Outlet></Outlet>
