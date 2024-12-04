@@ -43,7 +43,7 @@ const Rewievs = [
     bgFoto: "",
     aciklama:
       "Samsung S24, şimdiye kadar kullandığım en iyi akıllı telefonlardan biri! Kamerası gerçekten inanılmaz; hem gündüz hem de gece çekimlerinde netlik ve detay mükemmel. Ekran kalitesi adeta bir televizyon izliyormuş gibi hissettiriyor, renkler çok canlı ve parlak. İşlemci performansı ise hız konusunda hiç taviz vermiyor, uygulamalar arasında geçiş son derece akıcı. Pil ömrü beni oldukça şaşırttı, yoğun kullanımda bile günü rahatça çıkarıyor. Ayrıca tasarımı hem şık hem de ele tam oturuyor. Eğer üst düzey bir telefon arıyorsanız, Samsung S24 kesinlikle beklentilerinizi karşılar!",
-    rating: 0,
+    rating: 1,
     yorumlar: [
       {
         k_id: 1,
@@ -77,7 +77,7 @@ const Rewievs = [
     bgFoto: "",
     aciklama:
       "Bu gri sweatshirt tam bir rahatlık ve şıklık kombinasyonu! Kumaşı inanılmaz yumuşak ve kaliteli, gün boyu üzerimdeyken kendimi çok konforlu hissediyorum. Kesimi oldukça modern ve her türlü kombinle uyum sağlıyor. Hem spor yaparken hem de günlük kullanımda rahatlıkla giyilebiliyor. Ayrıca çok dayanıklı, defalarca yıkamama rağmen ne renginde solma ne de formunda bir değişiklik oldu. Dolabımın vazgeçilmez parçalarından biri haline geldi. Eğer hem sade hem de kullanışlı bir sweatshirt arıyorsanız, kesinlikle tavsiye ederim!",
-    rating: 0,
+    rating: 2,
     yorumlar: [
       {
         k_id: 1,
