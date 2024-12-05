@@ -88,7 +88,7 @@
   align-items: center;
   justify-content: center;
 }
-
+/* 
 .reviews {
   display: flex;
   flex-direction: row;
@@ -97,11 +97,10 @@
   height: 200px;
   width: 97%;
   gap: 5px;
-  /* border: 1px solid; */
   border-radius: 20px;
   box-sizing: border-box;
   box-shadow: 1px 1px 5px;
-}
+} */
 
 .reviews img {
   width: 20%;
@@ -170,6 +169,7 @@
   flex-direction: column;
   gap: 8px;
   overflow: auto;
+  scrollbar-width: none;
 }
 
 .reviews-comments img {
