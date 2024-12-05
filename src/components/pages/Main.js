@@ -113,7 +113,7 @@ function Main() {
             </div>
           </div>
           <div className="r-modal-bottom">
-            YORUMLAR
+            <div id="cmmnt">YORUMLAR</div>
             {selectedReview?.yorumlar.map((yorum) => (
               <div className="r-comments" key={yorum.k_id}>
                 <div className="r-comment">

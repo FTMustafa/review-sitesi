@@ -27,10 +27,15 @@
   height: 200px;
   width: 97%;
   gap: 5px;
-  /* border: 1px solid; */
   border-radius: 20px;
   box-sizing: border-box;
-  box-shadow: 0px 1px 10px rgb(90, 90, 90);
+  box-shadow: 0px 5px 20px rgb(90, 90, 90);
+  cursor: pointer;
+}
+
+.reviews:hover{
+  box-shadow: 0px 5px 20px rgb(0, 0, 0);
+  transform: translateX(5px);
 }
 
 .reviews img {
@@ -103,6 +108,7 @@
   color: #ccc;
   transition: color 0.2s linear;
   margin-bottom: 5px;
+  user-select: none;
 }
 
 .star.blink {
@@ -121,6 +127,7 @@
 .star.filled {
   animation: none;
   color: gold;
+  user-select: none;
 }
 
 .reviews-right {
@@ -226,14 +233,27 @@
   align-items: center;
   margin-top: 20px;
   height: 60%;
+  width: 90%;
   border: 1px solid;
   border-radius: 15px;
+  overflow: scroll;
+  scrollbar-width: none;
 }
 
+#cmmnt{
+  border-bottom: 1px solid; 
+   /* position: fixed; */
+   top: 0;
+   width: 100%;
+   text-align: center;
+   padding: 10px;
+}
 .r-comments:first-child{
   border-top: 1px solid ;
 }
-
+.r-comments:last-child{
+  border-bottom: transparent;
+}
 .r-comments{
   display: flex;
   flex-direction: row;
@@ -241,7 +261,7 @@
   justify-content: start;
   height: auto;
   width: 100%;
-  /* margin-top: 5px; */
+  /* max-width: 90%; */
   max-height: 60%;
   border-bottom: 1px solid;
   word-wrap: break-word;

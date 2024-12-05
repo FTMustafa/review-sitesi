@@ -35,6 +35,78 @@ const Rewievs = [
         k_yorum:
           "Performansı genel olarak iyi olsa da, fan sesi oldukça rahatsız edici. Özellikle sessiz bir ortamda çalışırken dikkatim sürekli dağılıyor.",
       },
+      {
+        k_id: 1,
+        k_foto: "",
+        k_yorum:
+          "Katılıyorum, Monster bilgisayarım sayesinde en yeni oyunları bile en yüksek ayarlarda oynayabiliyorum, performansı harika!",
+      },
+      {
+        k_id: 2,
+        k_foto: "",
+        k_yorum:
+          "Uzun süre çalışsam bile soğutma sistemi sayesinde asla ısınma problemi yaşamıyorum, çok memnunum.",
+      },
+      {
+        k_id: 3,
+        k_foto: "",
+        k_yorum:
+          "Tasarımı gerçekten çok şık ve dayanıklı, RGB ışıklar da tam bir oyun havası katıyor!",
+      },
+      {
+        k_id: 3,
+        k_foto: "",
+        k_yorum:
+          "Performansı genel olarak iyi olsa da, fan sesi oldukça rahatsız edici. Özellikle sessiz bir ortamda çalışırken dikkatim sürekli dağılıyor.",
+      },
+      {
+        k_id: 1,
+        k_foto: "",
+        k_yorum:
+          "Katılıyorum, Monster bilgisayarım sayesinde en yeni oyunları bile en yüksek ayarlarda oynayabiliyorum, performansı harika!",
+      },
+      {
+        k_id: 2,
+        k_foto: "",
+        k_yorum:
+          "Uzun süre çalışsam bile soğutma sistemi sayesinde asla ısınma problemi yaşamıyorum, çok memnunum.",
+      },
+      {
+        k_id: 3,
+        k_foto: "",
+        k_yorum:
+          "Tasarımı gerçekten çok şık ve dayanıklı, RGB ışıklar da tam bir oyun havası katıyor!",
+      },
+      {
+        k_id: 3,
+        k_foto: "",
+        k_yorum:
+          "Performansı genel olarak iyi olsa da, fan sesi oldukça rahatsız edici. Özellikle sessiz bir ortamda çalışırken dikkatim sürekli dağılıyor.",
+      },
+      {
+        k_id: 1,
+        k_foto: "",
+        k_yorum:
+          "Katılıyorum, Monster bilgisayarım sayesinde en yeni oyunları bile en yüksek ayarlarda oynayabiliyorum, performansı harika!",
+      },
+      {
+        k_id: 2,
+        k_foto: "",
+        k_yorum:
+          "Uzun süre çalışsam bile soğutma sistemi sayesinde asla ısınma problemi yaşamıyorum, çok memnunum.",
+      },
+      {
+        k_id: 3,
+        k_foto: "",
+        k_yorum:
+          "Tasarımı gerçekten çok şık ve dayanıklı, RGB ışıklar da tam bir oyun havası katıyor!",
+      },
+      {
+        k_id: 3,
+        k_foto: "",
+        k_yorum:
+          "Performansı genel olarak iyi olsa da, fan sesi oldukça rahatsız edici. Özellikle sessiz bir ortamda çalışırken dikkatim sürekli dağılıyor.",
+      },
     ],
   },
   {
