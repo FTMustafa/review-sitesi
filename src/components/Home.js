@@ -1,6 +1,7 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Modal from "./Modal";
+import Users from "./Users";
 import "./Home.css";
 
 function Home() {
@@ -8,18 +9,22 @@ function Home() {
   const [activeButton, setActiveButton] = useState("");
   const [userMode, setUserMode] = useState("admin");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const activeUser = Users.find((user) => user.isActive === true);
 
   const handleNavigate = (path) => {
     setActiveButton(path);
     navigate(path);
   };
 
-  // userMode değiştiğinde kullanıcıyı anasayfaya yönlendir
-  useEffect(() => {
-    if (userMode === "guest") {
-      navigate("/");
+  const handleLogout = () => {
+    if (userMode === "user" || userMode === "admin") {
+      setUserMode("guest");
+      if (activeUser) activeUser.isActive = false;
+      handleNavigate("/");
+    } else {
+      handleNavigate("login");
     }
-  }, [userMode, navigate]);
+  };
 
   return (
     <div className="home">
@@ -73,13 +78,7 @@ function Home() {
         <div
           style={{ marginTop: "0" }}
           className={`nav-button ${activeButton === "logout" ? "active" : ""}`}
-          onClick={() => {
-            userMode === "guest"
-              ? handleNavigate("login")
-              : userMode === "user" || userMode === "admin"
-              ? setUserMode("guest")
-              : console.log("GİRİŞ HATASI");
-          }}
+          onClick={handleLogout}
         >
           {userMode === "guest" ? "Giriş yap" : "Çıkış yap"}
         </div>

@@ -29,12 +29,13 @@
   gap: 5px;
   border-radius: 20px;
   box-sizing: border-box;
-  box-shadow: 0px 5px 20px rgb(90, 90, 90);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.305);
   cursor: pointer;
 }
 
 .reviews:hover{
-  box-shadow: 0px 5px 20px rgb(0, 0, 0);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  /* box-shadow: 0px 5px 20px rgb(0, 0, 0); */
   transform: translateX(5px);
 }
 
@@ -191,7 +192,7 @@
   justify-content: center;
   width: calc(50% - 140px);
   height: calc(100%-20px);
-  border: 1px solid;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.122);
   border-radius: 40px;
   padding: 20px;  
 }
@@ -223,7 +224,7 @@
   padding-left: 25px;
   scrollbar-width: none;
   overflow-y: scroll;
-  border: 1px solid;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.122);
   border-radius: 40px;
 }
 
@@ -234,7 +235,7 @@
   margin-top: 20px;
   height: 60%;
   width: 90%;
-  border: 1px solid;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.396);
   border-radius: 15px;
   overflow: scroll;
   scrollbar-width: none;

@@ -1,22 +1,75 @@
-import monsterImage from "./images/monster.jpeg";
 import s24 from "./images/s24.webp";
 import sweatshirt from "./images/sweatshirt.jpeg";
+
 
 const Users = [
   {
     id: 1,
     name: "Mustafa",
     surname: "Mustafa",
+    email: "",
+    password: "",
+    isActive: true,
     role: "admin",
+    followers: 0,
+    profilePicture:require('./images/a.jpg'),
     reviews: [
       {
         id: 1,
-        foto: monsterImage,
+        foto: require("./images/monster.jpeg"),
         bgFoto: "",
         aciklama:
           "Monster bilgisayarım gerçekten harika! Hem oyun oynarken hem de video düzenlerken inanılmaz bir performans sunuyor. Hiçbir şekilde kasma ya da donma yaşamadım. Özellikle fan sistemi çok başarılı, uzun süre kullanımda bile ısınma sorunu yaşamıyorum. Tasarımı da oldukça şık ve RGB ışıklarıyla tam bir oyun atmosferi yaratıyor. Fiyatına göre sunduğu özellikler gerçekten tatmin edici. Eğer güçlü bir bilgisayar arıyorsanız, kesinlikle tavsiye ederim!",
         rating: 0,
         yorumlar: [
+          {
+            k_id: 1,
+            k_foto: "",
+            k_yorum:
+              "Katılıyorum, Monster bilgisayarım sayesinde en yeni oyunları bile en yüksek ayarlarda oynayabiliyorum, performansı harika!",
+          },
+          {
+            k_id: 2,
+            k_foto: "",
+            k_yorum:
+              "Uzun süre çalışsam bile soğutma sistemi sayesinde asla ısınma problemi yaşamıyorum, çok memnunum.",
+          },
+          {
+            k_id: 3,
+            k_foto: "",
+            k_yorum:
+              "Tasarımı gerçekten çok şık ve dayanıklı, RGB ışıklar da tam bir oyun havası katıyor!",
+          },
+          {
+            k_id: 3,
+            k_foto: "",
+            k_yorum:
+              "Performansı genel olarak iyi olsa da, fan sesi oldukça rahatsız edici. Özellikle sessiz bir ortamda çalışırken dikkatim sürekli dağılıyor.",
+          },
+          {
+            k_id: 1,
+            k_foto: "",
+            k_yorum:
+              "Katılıyorum, Monster bilgisayarım sayesinde en yeni oyunları bile en yüksek ayarlarda oynayabiliyorum, performansı harika!",
+          },
+          {
+            k_id: 2,
+            k_foto: "",
+            k_yorum:
+              "Uzun süre çalışsam bile soğutma sistemi sayesinde asla ısınma problemi yaşamıyorum, çok memnunum.",
+          },
+          {
+            k_id: 3,
+            k_foto: "",
+            k_yorum:
+              "Tasarımı gerçekten çok şık ve dayanıklı, RGB ışıklar da tam bir oyun havası katıyor!",
+          },
+          {
+            k_id: 3,
+            k_foto: "",
+            k_yorum:
+              "Performansı genel olarak iyi olsa da, fan sesi oldukça rahatsız edici. Özellikle sessiz bir ortamda çalışırken dikkatim sürekli dağılıyor.",
+          },
           {
             k_id: 1,
             k_foto: "",
@@ -49,11 +102,16 @@ const Users = [
     id: 2,
     name: "Emir",
     surname: "Yılmaz",
+    email: "",
+    password: "",
+    isActive: false,
     role: "user",
+    followers: 0,
+    profilePicture:'',
     reviews: [
       {
         id: 3,
-        foto: sweatshirt,
+        foto: require("./images/sweatshirt.jpeg"),
         bgFoto: "",
         aciklama:
           "Bu gri sweatshirt tam bir rahatlık ve şıklık kombinasyonu! Kumaşı inanılmaz yumuşak ve kaliteli, gün boyu üzerimdeyken kendimi çok konforlu hissediyorum. Kesimi oldukça modern ve her türlü kombinle uyum sağlıyor. Hem spor yaparken hem de günlük kullanımda rahatlıkla giyilebiliyor. Ayrıca çok dayanıklı, defalarca yıkamama rağmen ne renginde solma ne de formunda bir değişiklik oldu. Dolabımın vazgeçilmez parçalarından biri haline geldi. Eğer hem sade hem de kullanışlı bir sweatshirt arıyorsanız, kesinlikle tavsiye ederim!",
@@ -90,11 +148,16 @@ const Users = [
     id: 3,
     name: "Ebru Nur",
     surname: "Tokatlı",
+    email: "",
+    password: "",
+    isActive: false,
     role: "user",
+    followers: 0,
+    profilePicture:'',
     reviews: [
       {
         id: 2,
-        foto: s24,
+        foto: require("./images/s24.webp"),
         bgFoto: "",
         aciklama:
           "Samsung S24, şimdiye kadar kullandığım en iyi akıllı telefonlardan biri! Kamerası gerçekten inanılmaz; hem gündüz hem de gece çekimlerinde netlik ve detay mükemmel. Ekran kalitesi adeta bir televizyon izliyormuş gibi hissettiriyor, renkler çok canlı ve parlak. İşlemci performansı ise hız konusunda hiç taviz vermiyor, uygulamalar arasında geçiş son derece akıcı. Pil ömrü beni oldukça şaşırttı, yoğun kullanımda bile günü rahatça çıkarıyor. Ayrıca tasarımı hem şık hem de ele tam oturuyor. Eğer üst düzey bir telefon arıyorsanız, Samsung S24 kesinlikle beklentilerinizi karşılar!",
@@ -132,14 +195,23 @@ const Users = [
     id: 4,
     name: "Bünyamin",
     surname: "Kalkan",
+    email: "",
+    password: "",
+    isActive: false,
     role: "user",
+    followers: 0,
+    profilePicture:'',
     reviews: [],
   },
   {
     id: 5,
     name: "Hilal",
     surname: "Dedek",
+    email: "",
+    password: "",
+    isActive: false,
     role: "user",
+    followers: 0,
     reviews: [],
   },
 ];
