@@ -5,12 +5,13 @@ import Users from "../Users";
 import ReviewCard from "../ReviewCard";
 import Modal from "../Modal";
 import yorumpp from "../images/yorumpp.jpg";
+import { useLocation } from "react-router-dom";
 
 function Profile() {
-  const [activeUser, setActiveUser] = useState(
-    Users.find((user) => user.isActive === true)
-  );
-
+  const location = useLocation();
+  const { userMode } = location.state || { userMode: "guest" };
+  const [activeUser, setActiveUser] = useState(null);
+  // const [userMode, setUserMode] = useState('guest');
   const [ratings, setRatings] = useState([]);
   const [hoveredRatings, setHoveredRatings] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,9 +20,9 @@ function Profile() {
   useEffect(() => {
     const user = Users.find((user) => user.isActive === true);
     setActiveUser(user);
+    // setUserMode(user.role);
 
     if (user) {
-      // Kullanıcı bulunduğunda değerlendirme verilerini hazırla
       setRatings(user.reviews.map((item) => item.rating || 0));
       setHoveredRatings(user.reviews.map(() => null));
     }
@@ -39,12 +40,11 @@ function Profile() {
   };
 
   const handleRating = (itemIndex, newRating) => {
-    if (!activeUser) return; // Kullanıcı yoksa hiçbir işlem yapma
+    if (!activeUser) return; 
     const updatedRatings = [...ratings];
     updatedRatings[itemIndex] = newRating;
     setRatings(updatedRatings);
 
-    // Kalıcı güncelleme
     const updatedUser = { ...activeUser };
     updatedUser.reviews[itemIndex].rating = newRating;
     setActiveUser(updatedUser);
@@ -58,7 +58,7 @@ function Profile() {
 
   return (
     <div className="profile">
-      {activeUser ? (
+      {activeUser && userMode != 'guest' ? (
         <>
           <div className="profile-bg-pic" alt="Background">
             <img

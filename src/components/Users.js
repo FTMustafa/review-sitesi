@@ -1,18 +1,15 @@
-import s24 from "./images/s24.webp";
-import sweatshirt from "./images/sweatshirt.jpeg";
-
 
 const Users = [
   {
     id: 1,
     name: "Mustafa",
     surname: "Mustafa",
-    email: "",
-    password: "",
+    email: "mustafa13mstf@gmail.com",
+    password: "123",
     isActive: true,
     role: "admin",
     followers: 0,
-    profilePicture:require('./images/a.jpg'),
+    profilePicture: require('./images/a.jpg'),
     reviews: [
       {
         id: 1,
@@ -102,8 +99,8 @@ const Users = [
     id: 2,
     name: "Emir",
     surname: "Yılmaz",
-    email: "",
-    password: "",
+    email: "emiryilmaz@gmail.com",
+    password: "123",
     isActive: false,
     role: "user",
     followers: 0,
@@ -148,8 +145,8 @@ const Users = [
     id: 3,
     name: "Ebru Nur",
     surname: "Tokatlı",
-    email: "",
-    password: "",
+    email: "ebrunurtokatli@gmail.com",
+    password: "123",
     isActive: false,
     role: "user",
     followers: 0,
@@ -195,8 +192,8 @@ const Users = [
     id: 4,
     name: "Bünyamin",
     surname: "Kalkan",
-    email: "",
-    password: "",
+    email: "bunyaminkalkan@gmail.com",
+    password: "123",
     isActive: false,
     role: "user",
     followers: 0,
@@ -207,8 +204,8 @@ const Users = [
     id: 5,
     name: "Hilal",
     surname: "Dedek",
-    email: "",
-    password: "",
+    email: "hilaldedek@gmail.com",
+    password: "123",
     isActive: false,
     role: "user",
     followers: 0,

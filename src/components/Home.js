@@ -1,5 +1,5 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "./Modal";
 import Users from "./Users";
 import "./Home.css";
@@ -9,19 +9,27 @@ function Home() {
   const [activeButton, setActiveButton] = useState("");
   const [userMode, setUserMode] = useState("admin");
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const activeUser = Users.find((user) => user.isActive === true);
+  const [activeUser, setActiveUser] = useState(null);
+
+  useEffect(() => {
+    const user = Users.find((user) => user.isActive === true);
+    setActiveUser(user);
+    setUserMode(user.role);
+  }, [activeUser]);
 
   const handleNavigate = (path) => {
     setActiveButton(path);
-    navigate(path);
+    navigate(path, {state: {userMode}});
   };
 
   const handleLogout = () => {
     if (userMode === "user" || userMode === "admin") {
-      setUserMode("guest");
-      if (activeUser) activeUser.isActive = false;
+      activeUser.isActive = false;
+      setUserMode('guest');
       handleNavigate("/");
-    } else {
+    } 
+    else {  
+      setActiveUser(null);
       handleNavigate("login");
     }
   };
